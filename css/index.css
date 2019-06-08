@@ -1,0 +1,348 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1600px;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Righteous', cursive;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+}
+
+ul {
+    margin-right: 60px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Righteous', cursive;
+    color: #1e1e1e;
+    padding: 0 40px;
+}
+
+ul li a:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/beer.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.header {
+    color: white;
+    font-family: arial;
+}
+
+.header h1 {
+    font-size: 45px;
+    font-family: 'Righteous', cursive;
+}
+
+.text p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    margin: 10px 250px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.button {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    -webkit-box-shadow: 0px 5px 30px -10px yellow;
+    -moz-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+}
+
+/*-----------------------offer------------------------------*/
+
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellow;
+}
+
+.product-card {
+    width: 320px;
+    position: relative;
+    margin: 50px;
+    background: #fafafa;
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 17px #6e6969;
+    cursor: pointer;
+}
+
+
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+    background: #862c11;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #a38240;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+
+/*--------------------WHY-------------------------*/
+
+
+.call {
+    width: 100%;
+    background: #862c11;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.phone img{
+    margin: 0;
+}
+.phone__text {
+    
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 160px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.phone__text span {
+    font-size: 14px;
+    color: #fea100;
+    margin-top: -4px;
+    display: block;
+}
+
+.phone__number {
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    margin-left: 62px;
+    margin-right: 0;
+}
+
+
+/*--------------------CAROUSEL-------------------------*/
+
+.carousel{
+    width: 100%;
+    height: 70vh;
+}
+
+
+/*------------------contact--------------*/
+
+.touch{
+    text-align: center;
+    background: yellow;
+    color:white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form{
+    text-align:center;
+}
+
+.container{
+    color: #862c11;
+}
+
+.form__input{
+    background: white;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 5px;
+    width:50%;
+    padding: 14px 0;
+    margin-right: 21px;
+    border:0;
+    padding-left:23px;
+    outline: none;
+}
+
+.form__btn{
+    font-family: 'PT Sans', sans-serif;
+    background: #862c11;
+    color:black;
+    font-size:16px;
+    font-weight:700;
+    border-radius:5px;
+    width:20%;
+    border:0;
+    padding: 14px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.footer{
+    background: black;
+    padding: 30px;
+    height: auto;
+}
+
+.credits{
+    color:white;
+    font-size:16px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+  
+  
